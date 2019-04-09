@@ -377,5 +377,95 @@ namespace Cwiczenia6
             var result = Emps.Where(emp => !emp.Ename.StartsWith("M"));
             DataGrid.ItemsSource = result.ToList();
         }
+
+        private void Task21Btn_Click(object sender, RoutedEventArgs e)
+        {
+            var result = Emps.Where(emp => emp.Mgr != null);
+            DataGrid.ItemsSource = result.ToList();
+        }
+
+        private void Task22Btn_Click(object sender, RoutedEventArgs e)
+        {
+            var result = Emps.Where(emp => emp.Job=="CLERK" && emp.Sal>=1000 && emp.Sal<2000);
+            DataGrid.ItemsSource = result.ToList();
+        }
+
+        private void Task23Btn_Click(object sender, RoutedEventArgs e)
+        {
+            var result = Emps.Where(emp => emp.Job == "CLERK" || (emp.Sal >= 1000 && emp.Sal < 2000));
+            DataGrid.ItemsSource = result.ToList();
+        }
+
+        private void Task24Btn_Click(object sender, RoutedEventArgs e)
+        {
+            var result = Emps.Where(emp => (emp.Job == "MANAGER" && emp.Sal > 1500) ||  emp.Job == "SALESMAN");
+            DataGrid.ItemsSource = result.ToList();
+        }
+
+        private void Task25Btn_Click(object sender, RoutedEventArgs e)
+        {
+            var result = Emps.Where(emp => (emp.Job == "MANAGER" || emp.Job == "SALESMAN") && emp.Sal >1500);
+            DataGrid.ItemsSource = result.ToList();
+        }
+
+        private void Task26Btn_Click(object sender, RoutedEventArgs e)
+        {
+            var result = Emps.Where(emp => emp.Job=="MANAGER" || (emp.Job=="CLERK" && emp.Deptno == 10));
+            DataGrid.ItemsSource = result.ToList();
+        }
+
+        private void Task27Btn_Click(object sender, RoutedEventArgs e)
+        {
+            var result = Emps.Join(Depts, emp => emp.Deptno, dept => dept.Deptno, (emp, dept) => new {
+                EMPNO = emp.Empno,
+                DNAME = dept.Dname,
+                LOC = dept.Loc
+            });
+            DataGrid.ItemsSource = result.ToList();
+        }
+
+        private void Task28Btn_Click(object sender, RoutedEventArgs e)
+        {
+            var result = Emps.Join(Depts, emp => emp.Deptno, dept => dept.Deptno, (emp, dept) => new {
+                ENAME = emp.Ename,
+                DNAME = dept.Dname,
+            }).OrderBy(emp=>emp.ENAME).ThenBy(emp=>emp.DNAME);
+            DataGrid.ItemsSource = result.ToList();
+        }
+
+        private void Task29Btn_Click(object sender, RoutedEventArgs e)
+        {
+            var result = Emps.Join(Depts, emp => emp.Deptno, dept => dept.Deptno, (emp, dept) => new {
+                ENAME = emp.Ename,
+                DEPTNO = dept.Deptno,
+                DNAME = dept.Dname,
+            });
+            DataGrid.ItemsSource = result.ToList();
+        }
+
+        private void Task30Btn_Click(object sender, RoutedEventArgs e)
+        {
+            var result = Emps.Where(emp=>emp.Sal>1500).Join(Depts, emp => emp.Deptno, dept => dept.Deptno, (emp, dept) => new {
+                ENAME = emp.Ename,
+                LOCATION = dept.Loc,
+                DNAME = dept.Dname,
+            });
+            DataGrid.ItemsSource = result.ToList();
+        }
+
+        private void Task31Btn_Click(object sender, RoutedEventArgs e)
+        {
+            var result = Emps.Join(Depts, emp => emp.Deptno, dept => dept.Deptno, (emp, dept) => new {
+                ENAME = emp.Ename,
+                LOCATION = dept.Loc,
+                DNAME = dept.Dname,
+            }).Where(emp => emp.LOCATION=="DALLAS");
+            DataGrid.ItemsSource = result.ToList();
+        }
+
+        private void Task32Btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

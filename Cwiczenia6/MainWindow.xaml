@@ -47,16 +47,28 @@
                 <Button Name="Task20Btn" Margin="5" Padding="4" Click="Task20Btn_Click">Zapytanie 20</Button>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Grid.Row="3" Margin="10">
-                <Button Name="Task21Btn" Margin="5" Padding="4" Click="Task11Btn_Click">Zapytanie 21</Button>
-                <Button Name="Task22Btn" Margin="5" Padding="4" Click="Task12Btn_Click">Zapytanie 22</Button>
-                <Button Name="Task23Btn" Margin="5" Padding="4" Click="Task13Btn_Click">Zapytanie 23</Button>
-                <Button Name="Task24Btn" Margin="5" Padding="4" Click="Task14Btn_Click">Zapytanie 24</Button>
-                <Button Name="Task25Btn" Margin="5" Padding="4" Click="Task15Btn_Click">Zapytanie 25</Button>
-                <Button Name="Task26Btn" Margin="5" Padding="4" Click="Task16Btn_Click">Zapytanie 26</Button>
-                <Button Name="Task27Btn" Margin="5" Padding="4" Click="Task17Btn_Click">Zapytanie 27</Button>
-                <Button Name="Task28Btn" Margin="5" Padding="4" Click="Task18Btn_Click">Zapytanie 28</Button>
-                <Button Name="Task29Btn" Margin="5" Padding="4" Click="Task19Btn_Click">Zapytanie 29</Button>
-                <Button Name="Task30Btn" Margin="5" Padding="4" Click="Task20Btn_Click">Zapytanie 30</Button>
+                <Button Name="Task21Btn" Margin="5" Padding="4" Click="Task21Btn_Click">Zapytanie 21</Button>
+                <Button Name="Task22Btn" Margin="5" Padding="4" Click="Task22Btn_Click">Zapytanie 22</Button>
+                <Button Name="Task23Btn" Margin="5" Padding="4" Click="Task23Btn_Click">Zapytanie 23</Button>
+                <Button Name="Task24Btn" Margin="5" Padding="4" Click="Task24Btn_Click">Zapytanie 24</Button>
+                <Button Name="Task25Btn" Margin="5" Padding="4" Click="Task25Btn_Click">Zapytanie 25</Button>
+                <Button Name="Task26Btn" Margin="5" Padding="4" Click="Task26Btn_Click">Zapytanie 26</Button>
+                <Button Name="Task27Btn" Margin="5" Padding="4" Click="Task27Btn_Click">Zapytanie 27</Button>
+                <Button Name="Task28Btn" Margin="5" Padding="4" Click="Task28Btn_Click">Zapytanie 28</Button>
+                <Button Name="Task29Btn" Margin="5" Padding="4" Click="Task29Btn_Click">Zapytanie 29</Button>
+                <Button Name="Task30Btn" Margin="5" Padding="4" Click="Task30Btn_Click">Zapytanie 30</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="4" Margin="10">
+                <Button Name="Task31Btn" Margin="5" Padding="4" Click="Task31Btn_Click">Zapytanie 31</Button>
+                <Button Name="Task32Btn" Margin="5" Padding="4" Click="Task32Btn_Click">Zapytanie 32</Button>
+                <Button Name="Task33Btn" Margin="5" Padding="4" Click="Task23Btn_Click">Zapytanie 33</Button>
+                <Button Name="Task34Btn" Margin="5" Padding="4" Click="Task24Btn_Click">Zapytanie 34</Button>
+                <Button Name="Task35Btn" Margin="5" Padding="4" Click="Task25Btn_Click">Zapytanie 35</Button>
+                <Button Name="Task36Btn" Margin="5" Padding="4" Click="Task26Btn_Click">Zapytanie 36</Button>
+                <Button Name="Task37Btn" Margin="5" Padding="4" Click="Task27Btn_Click">Zapytanie 37</Button>
+                <Button Name="Task38Btn" Margin="5" Padding="4" Click="Task28Btn_Click">Zapytanie 38</Button>
+                <Button Name="Task39Btn" Margin="5" Padding="4" Click="Task29Btn_Click">Zapytanie 39</Button>
+                <Button Name="Task40Btn" Margin="5" Padding="4" Click="Task30Btn_Click">Zapytanie 40</Button>
             </StackPanel>
         </StackPanel>
     </Grid>
