@@ -1,0 +1,51 @@
+﻿<Window x:Class="Cwiczenia6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cwiczenia6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="950">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <DataGrid Name="DataGrid" Grid.Row="4">
+            
+        </DataGrid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" Grid.Row="2" Margin="10">
+                <Button Name="Task1Btn" Margin="5" Padding="4" Click="Task1Btn_Click">Zapytanie 1</Button>
+                <Button Name="Task2Btn" Margin="5" Padding="4" Click="Task2Btn_Click">Zapytanie 2</Button>
+                <Button Name="Task3Btn" Margin="5" Padding="4" Click="Task3Btn_Click">Zapytanie 3</Button>
+                <Button Name="Task4Btn" Margin="5" Padding="4" Click="Task4Btn_Click">Zapytanie 4</Button>
+                <Button Name="Task5Btn" Margin="5" Padding="4" Click="Task5Btn_Click">Zapytanie 5</Button>
+                <Button Name="Task6Btn" Margin="5" Padding="4" Click="Task6Btn_Click">Zapytanie 6</Button>
+                <Button Name="Task7Btn" Margin="5" Padding="4" Click="Task7Btn_Click">Zapytanie 7</Button>
+                <Button Name="Task8Btn" Margin="5" Padding="4" Click="Task8Btn_Click">Zapytanie 8</Button>
+                <Button Name="Task9Btn" Margin="5" Padding="4" Click="Task9Btn_Click">Zapytanie 9</Button>
+                <Button Name="Task10Btn" Margin="5" Padding="4" Click="Task10Btn_Click">Zapytanie 10</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="2" Margin="10">
+                <Button Name="Task11Btn" Margin="5" Padding="4" Click="Task11Btn_Click">Zapytanie 11</Button>
+                <Button Name="Task12Btn" Margin="5" Padding="4" Click="Task12Btn_Click">Zapytanie 12</Button>
+                <Button Name="Task13Btn" Margin="5" Padding="4" Click="Task13Btn_Click">Zapytanie 13</Button>
+                <Button Name="Task14Btn" Margin="5" Padding="4" Click="Task14Btn_Click">Zapytanie 14</Button>
+                <Button Name="Task15Btn" Margin="5" Padding="4" Click="Task15Btn_Click">Zapytanie 15</Button>
+                <Button Name="Task16Btn" Margin="5" Padding="4" Click="Task16Btn_Click">Zapytanie 16</Button>
+                <Button Name="Task17Btn" Margin="5" Padding="4" Click="Task17Btn_Click">Zapytanie 17</Button>
+                <Button Name="Task18Btn" Margin="5" Padding="4" Click="Task18Btn_Click">Zapytanie 18</Button>
+                <Button Name="Task19Btn" Margin="5" Padding="4" Click="Task19Btn_Click">Zapytanie 19</Button>
+                <Button Name="Task20Btn" Margin="5" Padding="4" Click="Task20Btn_Click">Zapytanie 20</Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
